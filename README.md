@@ -37,6 +37,7 @@ Energy minimization
   Production MD
         ↓
 Trajectory analysis
+
  Software and Methods
 RDKit — molecular structure preparation and 3D structure handling
 ACPYPE / AmberTools — small-molecule parameterization and GROMACS file generation
