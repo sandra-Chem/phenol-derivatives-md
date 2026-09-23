@@ -1,0 +1,25 @@
+# This file was created Tue Sep  1 16:26:42 2026
+# Created by:
+#             :-) GROMACS - gmx mindist, 2025.4-Ubuntu_2025.4_1 (-:
+# 
+# Executable:   /usr/bin/gmx
+# Data prefix:  /usr
+# Working dir:  /home/sandra/GROMACS/Lysozyme_Project/Phenol_Project/MOL.amb2gmx
+# Command line:
+#   gmx mindist -f em2.gro -s em2.tpr -od mindist.xvg
+# gmx mindist is part of G R O M A C S:
+#
+# GRoups of Organic Molecules in ACtion for Science
+#
+@    title "Minimum Distance"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Distance (nm)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "PHENOL-SOL"
+0.000000e+00  2.033568e-01

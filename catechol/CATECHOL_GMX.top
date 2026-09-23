@@ -1,0 +1,25 @@
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.8333333333
+
+[ atomtypes ]
+OW_spc     OW_spc     15.9994     0.0000     A     3.16557e-01     6.50629e-01
+HW_spc     HW_spc      1.0080     0.0000     A     0.00000e+00     0.00000e+00
+
+; Include CATECHOL_GMX.itp topology
+#include "CATECHOL_GMX.itp"
+
+; Ligand position restraints
+#ifdef POSRES_LIG
+#include "posre_CATECHOL.itp"
+#endif
+
+#include "/usr/share/gromacs/top/amber99sb.ff/spc.itp"
+
+[ system ]
+CATECHOL in water
+
+[ molecules ]
+; Compound        nmols
+ CATECHOL         1
+SOL               566

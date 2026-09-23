@@ -1,0 +1,53 @@
+; Production MD of phenol in water
+
+integrator      = md
+dt              = 0.002
+nsteps          = 500000
+
+; Output
+nstxout         = 5000
+nstvout         = 5000
+nstenergy       = 1000
+nstlog          = 1000
+nstxout-compressed = 1000
+compressed-x-grps = System
+
+; Neighbor searching
+cutoff-scheme   = Verlet
+nstlist         = 10
+rlist           = 1.2
+
+; Electrostatics
+coulombtype     = PME
+rcoulomb        = 1.2
+
+; van der Waals
+vdwtype         = cutoff
+vdw-modifier    = force-switch
+rvdw-switch     = 1.0
+rvdw            = 1.2
+DispCorr        = no
+
+; Temperature coupling
+tcoupl          = V-rescale
+tc-grps         = System
+tau-t           = 0.1
+ref-t           = 300
+
+; Pressure coupling
+pcoupl          = C-rescale
+pcoupltype      = isotropic
+tau-p           = 2.0
+ref-p           = 1.0
+compressibility = 4.5e-5
+
+; Constraints
+constraints     = h-bonds
+lincs-iter      = 2
+
+; Periodic boundary conditions
+pbc             = xyz
+
+; Continue from NPT
+continuation    = yes
+gen-vel         = no

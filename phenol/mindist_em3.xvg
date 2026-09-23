@@ -1,0 +1,25 @@
+# This file was created Wed Sep  2 08:58:59 2026
+# Created by:
+#             :-) GROMACS - gmx mindist, 2025.4-Ubuntu_2025.4_1 (-:
+# 
+# Executable:   /usr/bin/gmx
+# Data prefix:  /usr
+# Working dir:  /home/sandra/GROMACS/Lysozyme_Project/Phenol_Project/MOL.amb2gmx
+# Command line:
+#   gmx mindist -f em3.gro -s em3.tpr -od mindist_em3.xvg -group
+# gmx mindist is part of G R O M A C S:
+#
+# GROwing Monsters And Cloning Shrimps
+#
+@    title "Minimum Distance"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Distance (nm)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "PHENOL-SOL"
+0.000000e+00  1.800694e-01
