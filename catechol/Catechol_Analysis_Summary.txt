@@ -1,0 +1,33 @@
+CATECHOL MD ANALYSIS SUMMARY
+============================================================
+
+SIMULATION STABILITY
+------------------------------------------------------------
+Average temperature: 300.132 K
+Temperature RMSD: 7.068 K
+Average density: 970.947 kg/m^3
+Density RMSD: 11.468 kg/m^3
+
+RDF
+------------------------------------------------------------
+O1 RDF peak: 0.304 nm, g(r) = 1.445
+O2 RDF peak: 0.298 nm, g(r) = 1.532
+
+MINIMUM O-WATER DISTANCE
+------------------------------------------------------------
+O1 minimum: 0.2520 nm
+O1 average minimum: 0.2816 nm
+O2 minimum: 0.2520 nm
+O2 average minimum: 0.2838 nm
+
+COORDINATION NUMBER
+------------------------------------------------------------
+O1 CN at 0.342 nm: 2.972
+O2 CN at 0.342 nm: 2.900
+
+HYDROGEN BONDS
+------------------------------------------------------------
+O1-H1 average H-bonds/frame: 0.631
+O2-H6 average H-bonds/frame: 0.485
+O1-H1 occupancy: 63.1%
+O2-H6 occupancy: 48.5%
